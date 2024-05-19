@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Formulario</title>
+<link rel="stylesheet" href="../static/css/estilos.css" />
+</head>
+<body>
+    <header id="cabecera">
+      <h1>Formulario de registro</h1>
+      <nav class="navegacion">
+        <ul class="lista">
+          <li><a class="navEnlace" href="./index.html">Inicio</a></li>
+          <li><a class="navEnlace" href="#">Categorias</a></li>
+          <li><a class="navEnlace" href="#">Ingresar</a></li>
+          <li><a class="navEnlace" href="#">Iniciar sesion</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="contenido">
+      <form action="/formulario">
+        <div>
+          <label for="nombre">Nombre/s: </label>
+          <input type="text" name="nombre" id="nombre" required />
+        </div>
+        <div>
+          <label for="apellido">Apellido/s: </label>
+          <input type="text" name="apellido" id="apellido" required />
+        </div>
+        <div>
+          <label for="dni">DNI: </label>
+          <input type="number" id="dni" name="dni" required />
+        </div>
+        <div>
+          <label for="fecha">Fecha de nacimiento: </label>
+          <input type="date" name="fecha" id="fecha" required />
+        </div>
+        <div>
+          <label>Género:</label>
+          <div id="genero">
+            <input type="radio" id="femenino" name="genero" value="F" />
+            <label for="femenino">Femenino</label>
+            <input type="radio" id="masculino" name="genero" value="M" />
+            <label for="masculino">Masculino</label>
+          </div>
+        </div>
+        <div>
+          <label for="correo">Correo electronico: </label>
+          <input type="email" name="correo" id="correo" required />
+        </div>
+        <div>
+          <label for="domicilio">Domicilio</label>
+          <input type="text" name="domicilio" id="domicilio" required />
+        </div>
+        <div>
+          <label for="provincia">Provincia </label>
+
+          <select name="provincia" id="provincia" required>
+            <option value="" selected disabled>Seleccione</option>
+            <option value="JUJUY">Jujuy</option>
+            <option value="SALTA">Salta</option>
+            <option value="FORMOSA">Formosa</option>
+            <option value="CORDOBA">Cordoba</option>
+          </select>
+        </div>
+        <div>
+          <label for="telefono">Telefono: </label
+          ><input type="tel" name="telefono" id="telefono" />
+        </div>
+        <div>
+          <label for="contraseña">Contraseña:</label>
+          <input type="password" name="contraseña" id="contraseña" required />
+        </div>
+        <div>
+          <label>categorías de interés: </label>
+          <div>
+            <input type="checkbox" id="productos" name="categorias" value="P" />
+            <label for="productos">Productos</label>
+            <input
+              type="checkbox"
+              id="descuentos"
+              name="categorias"
+              value="D"
+            />
+            <label for="descuentos">Descuentos</label>
+            <input type="checkbox" id="regalias" name="categorias" value="R" />
+            <label for="regalias">Regalias</label>
+          </div>
+        </div>
+        <div>
+          <label for="sugerencias">Sugerencias para la empresa:</label><br />
+          <textarea
+            name="sugerencias"
+            id="sugerencias"
+            cols="30"
+            rows="5"
+          ></textarea>
+        </div>
+        <div>
+          <label for="terminos">Acepto los términos y condiciones</label>
+          <input type="checkbox" name="terminos" id="terminos" required />
+        </div>
+        <div>
+          <label for="informacion"
+            >Acepto recibir información relativa a la empresa
+          </label>
+          <input type="checkbox" name="informacion" id="informacion" />
+        </div>
+
+        <button>Enviar</button>
+      </form>
+    </main>
+    <footer id="pie">
+      <div>
+        <h3 class="tituloCategoria">Nuestras redes</h3>
+        <ul class="lista">
+          <li><a class="pieEnlace" href="#">Facebook</a></li>
+          <li><a class="pieEnlace" href="#">Instagram</a></li>
+          <li><a class="pieEnlace" href="#">X</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="tituloCategoria">Contactanos</h3>
+        <ul class="lista">
+          <li><a class="pieEnlace" href="#">unaPagina@gmail.com</a></li>
+          <li><a class="pieEnlace" href="#">Habla con un asistente</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="tituloCategoria">Conoce mas</h3>
+        <ul class="lista">
+          <li><a class="pieEnlace" href="#">Productos</a></li>
+          <li><a class="pieEnlace" href="#">Comercios</a></li>
+          <li><a class="pieEnlace" href="#">Descuentos</a></li>
+          <li><a class="pieEnlace" href="#">Los mas buscados</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
